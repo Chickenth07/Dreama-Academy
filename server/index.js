@@ -14,9 +14,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ==================== MIDDLEWARE ====================
+const clientUrl = process.env.CLIENT_URL ? process.env.CLIENT_URL.replace(/\/$/, '') : '';
+
 const allowedOrigins = [
   'http://localhost:5173',
-  process.env.CLIENT_URL
+  clientUrl
 ].filter(Boolean);
 
 app.use(cors({
