@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaStar, FaUsers, FaClock, FaFire, FaTag, FaSearch, FaFilter } from 'react-icons/fa';
+import { FaStar, FaUsers, FaFire, FaSearch, FaFilter } from 'react-icons/fa';
 import { courseAPI } from '../../services/api';
 
 const formatPrice = (price) => new Intl.NumberFormat('vi-VN').format(price) + ' đ';

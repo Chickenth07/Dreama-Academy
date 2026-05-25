@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { FaStar, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -88,7 +88,7 @@ const TeachersSection = () => {
               }}
               className="pb-12"
             >
-              {teachers.map((teacher, i) => (
+              {teachers.map((teacher) => (
                 <SwiperSlide key={teacher.id}>
                   <div
                     id={`teacher-card-${teacher.id}`}

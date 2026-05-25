@@ -17,7 +17,7 @@ const CourseDetail = () => {
       .then((res) => setCourse(res.data))
       .catch(() => navigate('/khoa-hoc', { replace: true }))
       .finally(() => setLoading(false));
-  }, [slug]);
+  }, [slug, navigate]);
 
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center pt-20">

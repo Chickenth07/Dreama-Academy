@@ -15,7 +15,7 @@ const BlogDetail = () => {
     blogAPI.getById(slug)
       .then((res) => setBlog(res.data))
       .catch(() => navigate('/blog', { replace: true }));
-  }, [slug]);
+  }, [slug, navigate]);
 
   if (!blog) return (
     <div className="min-h-screen flex items-center justify-center pt-20">
